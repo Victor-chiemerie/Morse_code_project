@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Define the Morse code to character dictionary
 morse_dict = {
   '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E',
