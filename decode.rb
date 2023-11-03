@@ -21,10 +21,10 @@ def split_into_words(morse_code)
 end
 
 def decode_word(word, morse_dict)
-  characters = word.split # Characters within words are separated by one space
+    characters = word.split(' ') # Characters within words are separated by one space
   decoded_characters = characters.map { |char| morse_dict[char] }
   decoded_characters.join
 end
 
 # Example usage
-puts morse_code_to_text('... --- ...', morse_dict) # This will print "SOS"
+puts morse_code_to_text('... --- ...   - .... .   .-.. --- -... ---', morse_dict) # This will print "SOS THE LOBO"
